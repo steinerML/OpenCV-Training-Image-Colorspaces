@@ -10,30 +10,27 @@ I have used the following functions/methods:
 |cv2.cvtColor()   |We convert color by specifying destination colorspace                         |
 
 ## Test Image used: 
-I have used sample.jpg that can be found in the repository.
+I have used cube1.jpg & cube8.jpg that can be found in the repository.
 
-![Source Image Sequence](sample.jpg)
+![Source Image Sequence](cube1.jpg)
+![Source Image Sequence](cube8.jpg)
 ![Source Image Sequence](https://learnopencv.com/wp-content/uploads/2017/05/components-bgr.png)
 ## Summary:
 
 ```python
-#We draw a line
-cv2.line(imageLine, pointA, pointB, (255, 255, 0), thickness=3, lineType=cv2.LINE_AA)
+#We convert from BGR to LAB (bright)
+brightLAB = cv2.cvtColor(scaled_bright,cv2.COLOR_BGR2LAB)
+#We convert from BGR to LAB (dark)
+darkLAB = cv2.cvtColor(dark,cv2.COLOR_BGR2LAB)
 ```
 ```python
-#Implement the circle() function
-cv2.circle(imageCircle, circle_center, radius, color = (255,255,0) ,thickness=2,lineType=cv2.LINE_AA)
+#WE convert from BGR to YCrCb
+brightYCB = cv2.cvtColor(scaled_bright,cv2.COLOR_BGR2YCR_CB)
+darkYCB = cv2.cvtColor(dark,cv2.COLOR_BGR2YCR_CB)
 ```
 ```python
-# Draw the rectangle
-cv2.rectangle(imageRectangle, start_point, end_point, (0, 0, 255), thickness= 3, lineType=cv2.LINE_8)
-```
-```python
-#Ellipse Horizontal with Antialiasing
-cv2.ellipse(imageEllipse, center, axis1, 0, 0, 360, (255, 0, 0), thickness=3, lineType=cv2.LINE_AA)
-```
-```python
-#Insert Text Horizontal with Antialiasing
-cv2.putText(imageText, text, origin, fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale=1.5, color = (255,255,0), thickness=0, lineType=cv2.LINE_AA)
+#WE convert to HSV color space
+brightHSV = cv2.cvtColor(scaled_bright,cv2.COLOR_BGR2HSV)
+darkHSV = cv2.cvtColor(dark,cv2.COLOR_BGR2HSV)
 ```
 
