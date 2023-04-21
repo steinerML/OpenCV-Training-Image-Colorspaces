@@ -12,9 +12,10 @@ I have used the following functions/methods:
 ## Test Image used: 
 I have used cube1.jpg & cube8.jpg that can be found in the repository.
 
+
+![Source Image Sequence](https://learnopencv.com/wp-content/uploads/2017/05/components-bgr.png)
 ![Source Image Sequence](cube1.jpg)
 ![Source Image Sequence](cube8.jpg)
-![Source Image Sequence](https://learnopencv.com/wp-content/uploads/2017/05/components-bgr.png)
 ## Summary:
 
 ```python
